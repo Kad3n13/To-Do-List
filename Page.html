@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Themed To-Do List</title>
     <link rel="stylesheet" href="styles.css">
-    
+
 </head>
 <body class="theme-1">
 
 <div class="button-container">
     <button onclick="setThemeAndImage(1)">Front end</button>
-    <button onclick="setThemeAndImage(2)">Languges</button>
+    <button onclick="setThemeAndImage(2)">Languages</button>
     <button onclick="setThemeAndImage(3)">Back end</button>
     <button onclick="setThemeAndImage(4)">Full-Stack</button>
 </div>
 
-<h1 id="main-header"></h1>
+<h1 id="main-header">Goals</h1>
 
 <ul class="todo-list">
     <li>
@@ -42,7 +42,7 @@
         <label for="task3" id="task3-label">Learn PHP</label>
         <ul class="sub-item">
             <li>
-                <a class="sub-item-link"  id="task3-link"href="https://example.com/3" target="_blank">Introduce React</a>
+                <a class="sub-item-link"  id="task3-link"href="https://example.com/3" target="_blank">Implement PHP</a>
             </li>
         </ul>
     </li>
@@ -51,13 +51,13 @@
         <label for="task4" id="task4-label">Learn React</label>
         <ul class="sub-item">
             <li>
-                <a class="sub-item-link" id = "task4-link" href="https://example.com/4" target="_blank">Example</a>
+                <a class="sub-item-link" id = "task4-link" href="https://example.com/4" target="_blank">Introduce React</a>
             </li>
         </ul>
     </li>
 </ul>
     <script>
-    const images = [
+ const images = [
   "https://cdn.pixabay.com/photo/2024/03/02/21/09/ai-generated-8609481_1280.jpg",
   "https://cdn.pixabay.com/photo/2024/03/02/19/03/gas-mask-8609208_1280.png",
   "https://cdn.pixabay.com/photo/2023/12/12/21/16/ai-generated-8445903_1280.png",
@@ -66,33 +66,51 @@
 
 const themeContent = {
   1: {
-    header: "Front-End-Development",
-    task1: "Explore gaming keyboards",
-    task2: "Finish the report",
-    task3: "View Phone's Warranty",
-    task4: "Check Processor Specs"
+    header: "Front-End Development",
+    task1: "Master HTML",
+    task2: "Master CSS",
+    task3: "Learn JavaScript",
+    task4: "Learn React",
+    task1Link: "Learn Semanticism",
+    task2Link: "Implement Animations",
+    task3Link: "Learn Functions",
+    task4Link: "Introduce React"
   },
   2: {
-    header: "Theme 2 Plan",
-    task1: "Grocery Shopping",
-    task2: "Laundry",
-    task3: "Pay Bills",
-    task4: "Clean the House"
+    header: "Programming Languages",
+    task1: "Master Python",
+    task2: "Learn Java",
+    task3: "Learn C#",
+    task4: "Learn Rust",
+    task1Link: "Apply Concepts",
+    task2Link: "Create Classes",
+    task3Link: "Import Concepts",
+    task4Link: "Develop Applications"
   },
   3: {
-    header: "Theme 3 Agenda",
-    task1: "Learn HTML",
-    task2: "Study CSS",
-    task3: "Practice JavaScript",
-    task4: "Build a Website"
+    header: "Back-End Development",
+    task1: "Explore Databases",
+    task2: "Learn Node",
+    task3: "Master Express",
+    task4: "Build APIs",
+    task1Link: "Create Relational Databses",
+    task2Link: "Understand JS",
+    task3Link: "Build Backends",
+    task4Link: "Deploy APIs"
   },
-  4: {
-    header: "Theme 4 Schedule",
-    task1: "Workout",
-    task2: "Meditate",
-    task3: "Read a Book",
-    task4: "Go for a Walk"
-  }
+4: {
+  header: "Full-Stack Development Sprint",
+  task1: "Code Refactoring Session",
+  task2: "Technical Documentation Review",
+  task3: "API Endpoint Optimization",
+  task4: "UI/UX Component Workshop",
+  
+  task1Link: "Analyze Codebase",
+  task2Link: "Update Docs",
+  task3Link: "Test Endpoints",
+  task4Link: "Design System"
+}
+
 };
 
 function setThemeAndImage(themeNumber) {
@@ -105,6 +123,11 @@ function setThemeAndImage(themeNumber) {
   document.getElementById("task2-label").textContent = content.task2;
   document.getElementById("task3-label").textContent = content.task3;
   document.getElementById("task4-label").textContent = content.task4;
-} </script>
+  document.getElementById("task1-link").textContent = content.task1Link;
+  document.getElementById("task2-link").textContent = content.task2Link;
+  document.getElementById("task3-link").textContent = content.task3Link;
+  document.getElementById("task4-link").textContent = content.task4Link;
+}
+ </script>
 </body>
 </html>
