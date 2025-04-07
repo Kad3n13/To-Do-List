@@ -157,11 +157,34 @@ ul {
   --base05: #9788A0;
 }
 
+body {
+  color: white; /* Make all text white */
+}
+
 .button-container {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
+  flex-direction: column;
+  width: 120px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
 }
 
 .button-container button {
-  margin-bottom: 1px; /* Add space between buttons */
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #fff; /* White border */
+  color: white; /* White text */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.button-container button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
 }
