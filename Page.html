@@ -1,74 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Todo List</title>
-  <link rel="stylesheet" href="To-Do-List/styles.css">
-  <script src="To-Do-List/script.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themed To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="theme-1">
 
-  <div class="button-container">
-    <button onclick="setThemeAndImage(1)">Cyberpunk Girl</button>
-    <button onclick="setThemeAndImage(2)">Demon</button>
-    <button onclick="setThemeAndImage(3)">Cyberpunk City</button>
-    <button onclick="setThemeAndImage(4)">AI Landscape</button>
-  </div>
+<div class="button-container">
+    <button onclick="setThemeAndImage(1)">Theme 1</button>
+    <button onclick="setThemeAndImage(2)">Theme 2</button>
+    <button onclick="setThemeAndImage(3)">Theme 3</button>
+    <button onclick="setThemeAndImage(4)">Theme 4</button>
+</div>
 
-  <ul class="todo-list">
+<h1 id="main-header"></h1>
+
+<ul class="todo-list">
     <li>
-      <input type="checkbox" id="task1">
-      <label for="task1">Explore gaming keyboards</label>
-      <ul class="sub-item">
-        <li>
-          <a class="sub-item-link" href="https://example.com/1" target="_blank">Store link</a>
-        </li>
-      </ul>
+        <input type="checkbox" id="task1">
+        <label for="task1" id="task1-label"></label>
+        <ul class="sub-item">
+            <li>
+                <a class="sub-item-link" id="task1-link" href="https://example.com/1" target="_blank">Example</a>
+            </li>
+        </ul>
     </li>
     <li>
-      <input type="checkbox" id="task2">
-      <label for="task2">Finish the report</label>
-      <ul class="sub-item">
-        <li>
-          <a class="sub-item-link" href="https://example.com/2" target="_blank">Request Access</a>
-        </li>
-      </ul>
+        <input type="checkbox" id="task2">
+        <label for="task2" id="task2-label"></label>
+        <ul class="sub-item">
+            <li>
+                <a class="sub-item-link" id="task2-link" href="https://example.com/2" target="_blank">Example</a>
+            </li>
+        </ul>
     </li>
     <li>
-      <input type="checkbox" id="task3">
-      <label for="task3">View Phone's Warranty</label>
-      <ul class="sub-item">
-        <li>
-          <a class="sub-item-link" href="https://example.com/3" target="_blank">View Receipts</a>
-        </li>
-      </ul>
+        <input type="checkbox" id="task3">
+        <label for="task3" id="task3-label"></label>
+        <ul class="sub-item">
+            <li>
+                <a class="sub-item-link"  id="task3-link"href="https://example.com/3" target="_blank">Example</a>
+            </li>
+        </ul>
     </li>
     <li>
-      <input type="checkbox" id="task4">
-      <label for="task4">Check Processor Specs</label>
-      <ul class="sub-item">
-        <li>
-          <a class="sub-item-link" href="https://example.com/4" target="_blank">View Model Number</a>
-        </li>
-      </ul>
+        <input type="checkbox" id="task4">
+        <label for="task4" id="task4-label"></label>
+        <ul class="sub-item">
+            <li>
+                <a class="sub-item-link" id = "task4-link" href="https://example.com/4" target="_blank">Example</a>
+            </li>
+        </ul>
     </li>
-  </ul>
+</ul>
 
-  <script>
-    const images = [
-      "https://cdn.pixabay.com/photo/2024/03/02/21/09/ai-generated-8609481_1280.jpg",
-      "https://cdn.pixabay.com/photo/2024/03/02/19/03/gas-mask-8609208_1280.png",
-
-      "https://cdn.pixabay.com/photo/2023/12/12/21/16/ai-generated-8445903_1280.png",
-      "https://cdn.pixabay.com/photo/2024/07/20/07/55/ai-generated-8907785_1280.jpg"
-    ];
-
-    function setThemeAndImage(themeNumber) {
-      document.body.className = `theme-${themeNumber}`;
-      document.body.style.backgroundImage = `url("${images[themeNumber - 1]}")`;
-    }
-  </script>
+<script src="script.js"></script>
 </body>
 </html>
