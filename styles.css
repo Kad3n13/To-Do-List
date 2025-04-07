@@ -81,82 +81,80 @@ ul {
 }
 
 :root {
-    --bg-color: var(--base00);
-    --surface-color: var(--base01);
-    --primary-color: var(--base03);
-    --secondary-color: var(--base04);
-    --accent-color: var(--base05);
-    --link-color: var(--base05);
-    --heading-color: var(--base03);
-    --text-color: var(--base03);
-    --border-color: var(--base04);
-    --image-number: url("https://cdn.pixabay.com/photo/2024/03/02/21/09/ai-generated-8609481_1280.jpg");
-    --base00: #212121;
-    --base01: #37474F;
-    --base02: #607D8B;
-    --base03: #FFFFFF;
-    --base04: #D32F2F;
-    --base05: #90A4AE;
+  --bg-color: var(--base00);
+  --surface-color: var(--base01);
+  --primary-color: var(--base03);
+  --secondary-color: var(--base04);
+  --accent-color: var(--base05);
+  --link-color: var(--base05);
+  --heading-color: var(--base03);
+  --text-color: var(--base03);
+  --border-color: var(--base04);
+  --image-number: url("https://cdn.pixabay.com/photo/2024/03/02/21/09/ai-generated-8609481_1280.jpg");
+  --base00: #212121;
+  --base01: #37474F;
+  --base02: #607D8B;
+  --base03: #FFFFFF;
+  --base04: #D32F2F;
+  --base05: #90A4AE;
 }
 
 .theme-2 {
-    --bg-color: var(--base00);
-    --surface-color: var(--base01);
-    --primary-color: var(--base03);
-    --secondary-color: var(--base04);
-    --accent-color: var(--base02);
-    --link-color: var(--base05);
-    --heading-color: var(--base03);
-    --text-color: var(--base03);
-    --border-color: var(--base04);
-    --image-number: url("https://cdn.pixabay.com/photo/2023/02/07/13/39/cyberpunk-7774169_1280.jpg");
-    
-
-
-
-    --base00: #212121;
-    --base01: #424242;
-    --base02: #757575;
-    --base03: #E0E0E0;
-    --base04: #616161;
-    --base05: #9E9E9E;
-
+  --bg-color: var(--base00);
+  --surface-color: var(--base01);
+  --primary-color: var(--base03);
+  --secondary-color: var(--base04);
+  --accent-color: var(--base02);
+  --link-color: var(--base05);
+  --heading-color: var(--base03);
+  --text-color: var(--base03);
+  --border-color: var(--base04);
+  --image-number: url("https://cdn.pixabay.com/photo/2023/02/07/13/39/cyberpunk-7774169_1280.jpg");
+  
+  --base00: #212121;
+  --base01: #424242;
+  --base02: #757575;
+  --base03: #E0E0E0;
+  --base04: #616161;
+  --base05: #9E9E9E;
 }
 
-.theme-3 {--bg-color: var(--base00);
-    --surface-color: var(--base01);
-    --primary-color: var(--base03);
-    --secondary-color: var(--base04);
-    --accent-color: var(--base02);
-    --link-color: var(--base05);
-    --heading-color: var(--base03);
-    --text-color: var(--base03);
-    --border-color: var(--base04);
-    --image-number: url("https://cdn.pixabay.com/photo/2023/12/12/21/16/ai-generated-8445903_1280.png");
-    --base00: #4A0061;
-    --base01: #3F51B5;
-    --base02: #26A69A;
-    --base03: #F06292;
-    --base04: #7E57C2;
-    --base05: #00BCD4;
+.theme-3 {
+  --bg-color: var(--base00);
+  --surface-color: var(--base01);
+  --primary-color: var(--base03);
+  --secondary-color: var(--base04);
+  --accent-color: var(--base02);
+  --link-color: var(--base05);
+  --heading-color: var(--base03);
+  --text-color: var(--base03);
+  --border-color: var(--base04);
+  --image-number: url("https://cdn.pixabay.com/photo/2023/12/12/21/16/ai-generated-8445903_1280.png");
+  --base00: #4A0061;
+  --base01: #3F51B5;
+  --base02: #26A69A;
+  --base03: #F06292;
+  --base04: #7E57C2;
+  --base05: #00BCD4;
 }
 
-.theme-4 {--bg-color: var(--base00);
-    --surface-color: var(--base01);
-    --primary-color: var(--base03);
-    --secondary-color: var(--base04);
-    --accent-color: var(--base02);
-    --link-color: var(--base05);
-    --heading-color: var(--base03);
-    --text-color: var(--base03);
-    --border-color: var(--base04);
-    --image-number: url("https://cdn.pixabay.com/photo/2024/07/20/07/55/ai-generated-8907785_1280.jpg");
-    --base00: #B2DFDB;
-    --base01: #E0F2F1;
-    --base02: #FFFFFF;
-    --base03: #9788A0;
-    --base04: #E1BEE7;
-    --base05: #9788A0;
+.theme-4 {
+  --bg-color: var(--base00);
+  --surface-color: var(--base01);
+  --primary-color: var(--base03);
+  --secondary-color: var(--base04);
+  --accent-color: var(--base02);
+  --link-color: var(--base05);
+  --heading-color: var(--base03);
+  --text-color: var(--base03);
+  --border-color: var(--base04);
+  --image-number: url("https://cdn.pixabay.com/photo/2024/07/20/07/55/ai-generated-8907785_1280.jpg");
+  --base00: #B2DFDB;
+  --base01: #E0F2F1;
+  --base02: #FFFFFF;
+  --base03: #9788A0;
+  --base04: #E1BEE7;
+  --base05: #9788A0;
 }
 
 .button-container {
@@ -167,16 +165,3 @@ ul {
 .button-container button {
   margin-bottom: 1px; /* Add space between buttons */
 }
-
-
-    --base00: 12041E
-
-    --base01: 281639
-
-    --base02: 733077
-
-    --base03: E8D2EF
-
-    --base04: 672471
-
-    --base05: 973FB2
