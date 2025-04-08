@@ -157,7 +157,6 @@ ul {
   --base05: #9788A0;
 }
 
-
 /* Body Styles */
 body::before {
   content: '';
@@ -179,10 +178,11 @@ body::before {
   top: 0;
   left: 0;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5) /* Transparent white background for container */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent white background for container */
   z-index: 1000; /* Ensure it's on top of other elements */
   height: 100%; /* Make sure it takes the full height */
   overflow-y: auto; /* Allow the container to scroll if it exceeds the height */
+  padding-bottom: 20px; /* Add space at the bottom for the last buttons */
 }
 
 /* Button Styles */
@@ -211,6 +211,7 @@ body::before {
     width: 80px; /* Adjust width for mobile screens */
     padding: 10px;
     height: auto; /* Allow the container to adjust height */
+    padding-bottom: 20px; /* Ensure there's space for scrolling */
   }
 
   .button-container button {
@@ -224,6 +225,7 @@ body::before {
 @media (max-width: 400px) {
   .button-container {
     width: 60px; /* Even smaller container for very small screens */
+    padding-bottom: 20px; /* Ensure space for scrolling */
   }
 
   .button-container button {
