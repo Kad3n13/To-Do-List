@@ -164,7 +164,7 @@ body {
  .button-container {
   display: flex;
   flex-direction: column;
-  width: 120px; /* Default width for desktop */
+  width: 100px; /* Default width for desktop */
   position: fixed;
   top: 0;
   left: 0;
@@ -193,7 +193,7 @@ body {
 /* Mobile-specific Styles */
 @media (max-width: 600px) {
   .button-container {
-    width: 80px; /* Adjust width for mobile screens */
+    width: 60px; /* Adjust width for mobile screens */
     padding: 10px; /* Keep padding consistent */
   }
 
@@ -206,7 +206,7 @@ body {
 /* Further adjustments for very small screens (below 400px) */
 @media (max-width: 400px) {
   .button-container {
-    width: 70px; /* Even smaller container for very small screens */
+    width: 50px; /* Even smaller container for very small screens */
   }
 
   .button-container button {
