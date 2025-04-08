@@ -171,7 +171,7 @@ body {
   top: 0;
   left: 0;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent white background for container */
   z-index: 1000; /* Ensure it's on top of other elements */
   height: 100%; /* Make sure it takes the full height */
   overflow-y: auto; /* Allow the container to scroll if it exceeds the height */
@@ -185,14 +185,14 @@ body {
   border-radius: 5px;
   border: 1px solid #fff; /* White border */
   color: white; /* White text */
-  background-color: transparent; /* Transparent background */
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background for buttons */
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition */
   min-height: 40px; /* Ensure buttons have enough touch area */
 }
 
 .button-container button:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
+  background-color: rgba(255, 255, 255, 0.4); /* Lighter transparent white on hover */
 }
 
 /* Mobile-specific styles */
@@ -222,3 +222,4 @@ body {
     min-height: 30px; /* Ensure minimum button height */
   }
 }
+
