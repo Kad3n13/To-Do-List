@@ -164,20 +164,22 @@ body {
 .button-container {
   display: flex;
   flex-direction: column;
-  width: 100px; /* Reduced width for mobile */
+  width: 20%; /* Percentage width for responsiveness */
   position: fixed;
   top: 0;
   left: 0;
-  padding: 10px;
+  bottom: 0; /* Ensure container stays within viewport height */
+  padding: 5%; /* Percentage padding */
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+  overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 .button-container button {
-  margin-bottom: 5px;
-  margin-top: 5px;
-  padding: 6px 10px; /* Reduced padding for smaller buttons */
-  font-size: 12px; /* Smaller font size */
-  border-radius: 4px; /* Slightly smaller border radius */
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 4% 7%; /* Reduced padding with percentage for better scaling */
+  font-size: 4vw; /* Font size based on viewport width */
+  border-radius: 4px; /* Border radius */
   border: 1px solid #fff; /* White border */
   color: white; /* White text */
   background-color: transparent; /* Transparent background */
@@ -187,15 +189,16 @@ body {
 
 @media (max-width: 600px) {
   .button-container {
-    width: 80px; /* Smaller container width on mobile */
+    width: 25%; /* Adjust width for small screens (increased percentage for better mobile scaling) */
+    padding: 4%; /* Adjust padding */
+    bottom: 10px; /* Ensure container has space at the bottom of the screen */
   }
 
   .button-container button {
-    padding: 5px 8px; /* Even smaller padding for mobile */
-    font-size: 11px; /* Adjust font size for mobile */
+    padding: 3% 6%; /* Even smaller padding for mobile */
+    font-size: 5vw; /* Adjust font size relative to screen width */
   }
 }
-
 
 .button-container button:hover {
   background-color: rgba(255, 255, 255, 0.2); /* Lighter background on hover */
