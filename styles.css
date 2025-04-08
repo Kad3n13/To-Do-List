@@ -83,23 +83,29 @@
 
 /* Global Styles */
 body {
-  background-image: var(--image-number);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: var(--text-color);
   position: relative;
+  color: var(--text-color);
+  z-index: 0;
+  background: none !important; /* Clear background-image to prevent double layering */
 }
 
 body::before {
   content: '';
-  position: fixed; /* Covers the entire viewport, always */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% transparency */
-  z-index: -1; /* Stays behind content */
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: var(--image-number);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay */
+  z-index: -1;
 }
 
 /* Typography */
