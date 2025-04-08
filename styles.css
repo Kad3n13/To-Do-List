@@ -185,7 +185,7 @@ body {
   border-radius: 5px;
   border: 1px solid #fff; /* White border */
   color: white; /* White text */
-  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background for buttons */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent white background for buttons */
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition */
   min-height: 40px; /* Ensure buttons have enough touch area */
