@@ -208,7 +208,7 @@ body::before {
 /* Mobile-specific styles */
 @media (max-width: 600px) {
   .button-container {
-    width: 80px; /* Adjust width for mobile screens */
+    width: 60px; /* Adjust width for mobile screens */
     padding: 10px;
     height: auto; /* Allow the container to adjust height */
   }
@@ -223,7 +223,7 @@ body::before {
 /* Very small screens */
 @media (max-width: 400px) {
   .button-container {
-    width: 70px; /* Even smaller container for very small screens */
+    width: 40px; /* Even smaller container for very small screens */
   }
 
   .button-container button {
