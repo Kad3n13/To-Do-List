@@ -174,7 +174,7 @@ body::before {
 .button-container {
   display: flex;
   flex-direction: column;
-  width: 120px; /* Default width for desktop */
+  width: 100px; /* Default width for desktop */
   position: fixed;
   top: 0;
   left: 0;
@@ -194,7 +194,7 @@ body::before {
   border-radius: 5px;
   border: 1px solid var(--border-color); /* Transparent white border */
   color: var(--text-color); /* White text */
-  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background for buttons */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent white background for buttons */
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition */
   min-height: 40px; /* Ensure buttons have enough touch area */
@@ -208,7 +208,7 @@ body::before {
 /* Mobile-specific styles */
 @media (max-width: 600px) {
   .button-container {
-    width: 60px; /* Adjust width for mobile screens */
+    width: 80px; /* Adjust width for mobile screens */
     padding: 10px;
     height: auto; /* Allow the container to adjust height */
   }
@@ -223,7 +223,7 @@ body::before {
 /* Very small screens */
 @media (max-width: 400px) {
   .button-container {
-    width: 40px; /* Even smaller container for very small screens */
+    width: 60px; /* Even smaller container for very small screens */
   }
 
   .button-container button {
