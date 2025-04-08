@@ -1,4 +1,4 @@
-body {
+ody {
   background-image: var(--image-number);
   background-size: cover;
   background-repeat: no-repeat;
@@ -164,40 +164,25 @@ body {
 .button-container {
   display: flex;
   flex-direction: column;
-  width: 20%; /* Percentage width for responsiveness */
+  width: 120px;
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0; /* Ensure container stays within viewport height */
-  padding: 5%; /* Percentage padding */
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
-  overflow-y: auto; /* Allow scrolling if content overflows */
 }
 
 .button-container button {
-  margin-bottom: 5%;
-  margin-top: 5%;
-  padding: 4% 7%; /* Reduced padding with percentage for better scaling */
-  font-size: 4vw; /* Font size based on viewport width */
-  border-radius: 4px; /* Border radius */
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
   border: 1px solid #fff; /* White border */
   color: white; /* White text */
   background-color: transparent; /* Transparent background */
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-@media (max-width: 600px) {
-  .button-container {
-    width: 40%; /* Adjust width for small screens (increased percentage for better mobile scaling) */
-    padding: 4%; /* Adjust padding */
-    bottom: 10px; /* Ensure container has space at the bottom of the screen */
-  }
-
-  .button-container button {
-    padding: 3% 6%; /* Even smaller padding for mobile */
-    font-size: 5vw; /* Adjust font size relative to screen width */
-  }
 }
 
 .button-container button:hover {
