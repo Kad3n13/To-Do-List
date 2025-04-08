@@ -212,6 +212,12 @@ label {
     left: 10px;
     top: 10px;
   }
+  
+  @media (max-width: 768px) {
+  body::before {
+    background-attachment: scroll;
+  }
+}
 
   .button-container button {
     padding: 10px 14px;
