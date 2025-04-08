@@ -174,13 +174,13 @@ body::before {
   display: flex;
   flex-direction: column;
   width: 100px; /* Default width for desktop */
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute; /* Changed from fixed to absolute for better mobile compatibility */
+  top: 20px; /* Adjust the top position to make space from the top */
+  left: 20px; /* Position the button container from the left */
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5); /* Transparent white background for container */
   z-index: 1000; /* Ensure it's on top of other elements */
-  height: 100%; /* Make sure it takes the full height */
+  height: auto; /* Allow the container to adjust height dynamically */
   overflow-y: auto; /* Allow the container to scroll if it exceeds the height */
   padding-bottom: 20px; /* Add space at the bottom for the last buttons */
 }
@@ -188,16 +188,15 @@ body::before {
 /* Button Styles */
 .button-container button {
   margin-bottom: 10px; /* Space between buttons */
-  margin-top: 10px;
-  padding: 10px 14px; /* Comfortable padding for buttons */
-  font-size: 16px; /* Font size for readability */
+  padding: 12px 18px; /* Comfortable padding for buttons */
+  font-size: 14px; /* Font size for readability */
   border-radius: 5px;
   border: 1px solid var(--border-color); /* Transparent white border */
   color: var(--text-color); /* White text */
   background-color: rgba(0, 0, 0, 0.5); /* Transparent white background for buttons */
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition */
-  min-height: 40px; /* Ensure buttons have enough touch area */
+  min-height: 50px; /* Ensure buttons have enough touch area */
 }
 
 /* Hover Effect */
@@ -209,15 +208,14 @@ body::before {
 @media (max-width: 600px) {
   .button-container {
     width: 80px; /* Adjust width for mobile screens */
-    padding: 10px;
-    height: auto; /* Allow the container to adjust height */
-    padding-bottom: 20px; /* Ensure there's space for scrolling */
+    left: 10px; /* Adjust left positioning for mobile */
+    top: 10px; /* Adjust the top position */
   }
 
   .button-container button {
-    padding: 8px 12px;
-    font-size: 14px;
-    min-height: 35px;
+    padding: 10px 14px;
+    font-size: 12px;
+    min-height: 45px; /* Larger buttons for touch targets */
   }
 }
 
@@ -225,89 +223,11 @@ body::before {
 @media (max-width: 400px) {
   .button-container {
     width: 60px; /* Even smaller container for very small screens */
-    padding-bottom: 20px; /* Ensure space for scrolling */
   }
 
   .button-container button {
-    padding: 6px 10px;
-    font-size: 12px;
-    min-height: 30px;
+    padding: 8px 12px;
+    font-size: 10px;
+    min-height: 35px; /* Smaller buttons for smaller screens */
   }
-}
-
-/* List Styles */
-.todo-list {
-  list-style: none;
-  text-align: center;
-}
-
-.main-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-/* Sub-item and Label Styles */
-.sub-item {
-  text-align: left;
-  padding: 20px;
-  margin: 10px auto;
-  width: fit-content;
-  transform: translateX(+35%);
-  background-color: var(--surface-color);
-  border-radius: 10px;
-  border: 4px solid var(--border-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 150px;
-  color: var(--text-color);
-}
-
-label {
-  text-align: center;
-  padding: 1px;
-  margin: 10px auto;
-  transform: translateX(+35%);
-  background-color: var(--surface-color);
-  border-radius: 50px;
-  border: 2px solid var(--border-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 150px;
-  color: var(--text-color);
-}
-
-/* Link Styles */
-a {
-  text-decoration: none;
-  color: var(--link-color);
-}
-
-a:hover {
-  color: blue;
-  text-decoration: underline;
-}
-
-a:active {
-  color: red;
-}
-
-a:focus {
-  outline: 2px solid orange;
-}
-
-a:visited {
-  color: purple;
-}
-
-h1 {
-  text-align: center;
-  color: var(--heading-color);
-}
-
-ul {
-  text-align: center;
-  margin: 0 auto;
-  width: fit-content;
-  transform: translateX(-30%);
 }
