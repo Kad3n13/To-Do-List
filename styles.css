@@ -1,3 +1,5 @@
+CSS
+—
 body {
   background-image: var(--image-number);
   background-size: cover;
@@ -157,40 +159,49 @@ ul {
   --base05: #9788A0;
 }
 
-body {
-  color: white; /* Make all text white */
-  margin: 0;
-  padding: 0;
+/* Body Styles */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% transparency */
+  z-index: -1; /* Ensure the overlay stays behind the content */
 }
 
+/* Button Container Styles */
 .button-container {
   display: flex;
   flex-direction: column;
-  width: 120px; /* Default width for desktop */
-  position: fixed;
-  top: 0;
-  left: 0;
+  width: 100px; /* Default width for desktop */
+  position: absolute; /* Changed from fixed to absolute for better mobile compatibility */
+  top: 20px; /* Adjust the top position to make space from the top */
+  left: 20px; /* Position the button container from the left */
   padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1); /* Transparent white background for container */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent white background for container */
   z-index: 1000; /* Ensure it's on top of other elements */
-  height: 100%; /* Make sure it takes the full height */
+  height: auto; /* Allow the container to adjust height dynamically */
   overflow-y: auto; /* Allow the container to scroll if it exceeds the height */
+  padding-bottom: 20px; /* Add space at the bottom for the last buttons */
 }
 
+/* Button Styles */
 .button-container button {
   margin-bottom: 10px; /* Space between buttons */
-  margin-top: 10px;
-  padding: 10px 14px; /* Comfortable padding for buttons */
-  font-size: 16px; /* Font size for readability */
+  padding: 12px 18px; /* Comfortable padding for buttons */
+  font-size: 14px; /* Font size for readability */
   border-radius: 5px;
-  border: 1px solid #fff; /* White border */
-  color: white; /* White text */
-  background-color: rgba(255, 255, 255, 0.2); /* Transparent white background for buttons */
+  border: 1px solid var(--border-color); /* Transparent white border */
+  color: var(--text-color); /* White text */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent white background for buttons */
   cursor: pointer;
   transition: background-color 0.3s ease; /* Smooth transition */
-  min-height: 40px; /* Ensure buttons have enough touch area */
+  min-height: 50px; /* Ensure buttons have enough touch area */
 }
 
+/* Hover Effect */
 .button-container button:hover {
   background-color: rgba(255, 255, 255, 0.4); /* Lighter transparent white on hover */
 }
@@ -199,26 +210,26 @@ body {
 @media (max-width: 600px) {
   .button-container {
     width: 80px; /* Adjust width for mobile screens */
-    padding: 10px; /* Keep padding consistent */
-    height: auto; /* Allow the container to adjust height */
+    left: 10px; /* Adjust left positioning for mobile */
+    top: 10px; /* Adjust the top position */
   }
 
   .button-container button {
-    padding: 8px 12px; /* Smaller padding for mobile */
-    font-size: 14px; /* Smaller font size for mobile */
-    min-height: 35px; /* Button height for easier tapping */
+    padding: 10px 14px;
+    font-size: 12px;
+    min-height: 45px; /* Larger buttons for touch targets */
   }
 }
 
-/* Further adjustments for very small screens (below 400px) */
+/* Very small screens */
 @media (max-width: 400px) {
   .button-container {
-    width: 70px; /* Even smaller container for very small screens */
+    width: 60px; /* Even smaller container for very small screens */
   }
 
   .button-container button {
-    padding: 6px 10px; /* More compact button padding */
-    font-size: 12px; /* Smaller font size for very small screens */
-    min-height: 30px; /* Ensure minimum button height */
+    padding: 8px 12px;
+    font-size: 10px;
+    min-height: 35px; /* Smaller buttons for smaller screens */
   }
 }
